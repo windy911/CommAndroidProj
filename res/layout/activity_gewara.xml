@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+
+    <com.hhp.commandroidproj.ui.PosterGallery
+        android:id="@+id/hot_movie_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="480px"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dip"
+        android:spacing="15dip"
+        android:visibility="visible" />
+
+</LinearLayout>

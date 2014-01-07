@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/shadow"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/shadowline" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="1dip"
+        android:paddingRight="1dip"
+        android:paddingTop="1dip"
+        android:paddingBottom="5dip"
+        android:background="@drawable/poster_bk"
+        android:layout_above="@id/shadow" >
+
+        <ImageView
+            android:id="@+id/imgMoviePoster"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/default_img" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgMovieType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/movie_type3d" >
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dip"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:background="@color/posterAlphabg" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvMovieName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:ellipsize="end"
+                    android:maxLength="11"
+                    android:textColor="@color/posterMovieName"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <com.hhp.commandroidproj.ui.ScoreView
+                    android:id="@+id/tvMovieScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_toRightOf="@id/tvMovieName"
+                    android:gravity="center_horizontal"
+                    android:text="9.8"
+                    android:textColor="@color/posterMovieName"
+                    android:textSize="18sp" />
+                
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

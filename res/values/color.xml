@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent_background">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="payGrayBg">#FFFDF8F4</color>
+    <color name="posterAlphabg">#B2000000</color>
+    <color name="posterMovieName">#de6226</color>
+
+</resources>
